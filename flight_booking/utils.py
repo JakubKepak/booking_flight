@@ -1,9 +1,13 @@
-from datetime import datetime, timedelta
+from datetime import datetime
+
+# TODO implement logger for debugging
+# TODO handle exceptions
 
 
 class BookFlightErrors(Exception):
     """Base class for exceptions in flight_booking"""
     pass
+
 
 class InputError(BookFlightErrors):
     """Raise when there is an error on input"""
